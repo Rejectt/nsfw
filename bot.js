@@ -7,6 +7,18 @@ client.on('ready', () => {
   console.log('---------------')
 });
 
+
+client.on('message', message => {
+if (message.content.startsWith('gif')){
+     let embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username)
+  .setColor("RANADOM")
+  .setImage("https://cdn.boob.bot/Gifs/1797.gif")
+     
+  message.channel.sendEmbed(embed);
+    }
+});
+
 client.on('message', message => {
 if (message.content.startsWith('nsfw')){
      let embed = new Discord.RichEmbed()
