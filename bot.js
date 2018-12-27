@@ -1,3 +1,4 @@
+const Discord = require("discord.js");
 const client = new Discord.Client();
 const prefix = "!"
 client.on('ready', () => {
@@ -5,6 +6,7 @@ client.on('ready', () => {
   console.log(' Bot Is Online')
   console.log('---------------')
 });
+
 const Discord = require("discord.js");
 
 module.exports.run = async (bot,message,args) => {
