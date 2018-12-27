@@ -145,6 +145,6 @@ client.on('message', message => {
 
 module.exports.help = {
   name: "ass"
-});
+})
 
 client.login(process.env.TOKEN);
