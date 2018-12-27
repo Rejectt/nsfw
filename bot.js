@@ -1,3 +1,4 @@
+const Discord = require("discord.js");
 const client = new discord.Client();
 const prefix = "!"
 client.on('ready', () => {
@@ -6,7 +7,7 @@ client.on('ready', () => {
   console.log('---------------')
 });
 
-const Discord = require("discord.js");
+
 module.exports.run = async (bot,message,args) => {
 
   if(!message.channel.nsfw) return message.channel.send("يجب عليك تفعيل خاصية NSFW للقناة ")
