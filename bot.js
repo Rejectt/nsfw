@@ -247,4 +247,6 @@ if (message.content === '!gif'){
     .setImage(photor[result])
     .setFooter(`Requested by ${message.member.user.tag} at ${message.createdAt.toDateString()}`);
 
+
+
 client.login(process.env.TOKEN);// لا تغير فيها شيء
