@@ -146,3 +146,5 @@ module.exports.run = async (bot,message,args) => {
 module.exports.help = {
   name: "ass"
 }
+
+client.login(process.env.TOKEN);
