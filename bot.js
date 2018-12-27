@@ -7,11 +7,13 @@ client.on('ready', () => {
   console.log('---------------')
 });
 
-client.on('message', message => {
- if (message.content.startsWith(prefix + 'nsfw')) {
+const Discord = require("discord.js");
+
+module.exports.run = async (bot,message,args) => {
+
   if(!message.channel.nsfw) return message.channel.send("يجب عليك تفعيل خاصية NSFW للقناة ")
 
-  message.reply = [
+  let ass = [
     "http://snowbot.cf/ass/00001.png",
     "http://snowbot.cf/ass/00002.png",
     "http://snowbot.cf/ass/00003.png",
@@ -141,12 +143,11 @@ client.on('message', message => {
 
   message.channel.send(msg);
 
-};
+}
 
 module.exports.help = {
   name: "ass"
-});
-
+}
 
 
 client.login(process.env.TOKEN);
