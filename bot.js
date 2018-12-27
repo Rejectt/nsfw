@@ -240,13 +240,11 @@ const photor = [ // هنا تقدر تضيف صور واشياء من هاذي
 
 client.on('message', message => {
 if (message.content === '!gif'){
-     let embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username)
-  .setColor("RANADOM")
-  .setDescription('')
-  .setImage(${photor[Math.floor(Math.random() * photor.length)]}))
-  message.channel.sendEmbed(embed);
-    }
-});
+   let result = Math.floor((Math.random() * photor.length));
+
+    let msg = new Discord.RichEmbed()
+    .setTitle(":ok_hand: :sweat_drops:")
+    .setImage(photor[result])
+    .setFooter(`Requested by ${message.member.user.tag} at ${message.createdAt.toDateString()}`);
 
 client.login(process.env.TOKEN);// لا تغير فيها شيء
