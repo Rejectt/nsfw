@@ -84,5 +84,27 @@ if (message.content.startsWith('nsfw6')){
     }
 });
 
+client.on('message', message => {
+if (message.content.startsWith('ru')){
+     let embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username)
+  .setColor("RANADOM")
+  .setImage("http://media.obutts.ru/butts_preview/00513.jpg")
+     
+  message.channel.sendEmbed(embed);
+    }
+});
+
+client.on('message', message => {
+if (message.content.startsWith('ru1')){
+     let embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username)
+  .setColor("RANADOM")
+  .setImage("http://media.obutts.ru/butts_preview/00937.jpg")
+     
+  message.channel.sendEmbed(embed);
+    }
+});
+
 
 client.login(process.env.TOKEN);// لا تغير فيها شيء
