@@ -244,7 +244,7 @@ if (message.content === '!gif'){
   .setAuthor(message.author.username)
   .setColor("RANADOM")
   .setDescription('')
-  .setImage(${photor[Math.floor(Math.random() * photor.length)]})
+  .setImage(${photor[Math.floor(Math.random() * photor.length)]}))
   message.channel.sendEmbed(embed);
     }
 });
