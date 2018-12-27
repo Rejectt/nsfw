@@ -11,7 +11,7 @@ client.on('message', message => {
  if (message.content.startsWith(prefix + 'nsfw')) {
   if(!message.channel.nsfw) return message.channel.send("يجب عليك تفعيل خاصية NSFW للقناة ")
 
-  let ass = [
+  Message.reply = [
     "http://snowbot.cf/ass/00001.png",
     "http://snowbot.cf/ass/00002.png",
     "http://snowbot.cf/ass/00003.png",
