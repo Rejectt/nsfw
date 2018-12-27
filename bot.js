@@ -1,4 +1,4 @@
-const client = new Discord.Client();
+const client = new discord.Client();
 const prefix = "!"
 client.on('ready', () => {
   console.log('---------------');
