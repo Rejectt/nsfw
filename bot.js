@@ -11,7 +11,7 @@ client.on('message', message => {
  if (message.content.startsWith(prefix + 'nsfw')) {
   if(!message.channel.nsfw) return message.channel.send("يجب عليك تفعيل خاصية NSFW للقناة ")
 
-  Message.reply = [
+  message.reply = [
     "http://snowbot.cf/ass/00001.png",
     "http://snowbot.cf/ass/00002.png",
     "http://snowbot.cf/ass/00003.png",
@@ -141,10 +141,10 @@ client.on('message', message => {
 
   message.channel.send(msg);
 
-}
+};
 
 module.exports.help = {
   name: "ass"
-}
+});
 
 client.login(process.env.TOKEN);
