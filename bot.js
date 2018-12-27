@@ -7,7 +7,6 @@ client.on('ready', () => {
   console.log('---------------')
 });
 
-const Discord = require("discord.js");
 
 module.exports.run = async (bot,message,args) => {
 
