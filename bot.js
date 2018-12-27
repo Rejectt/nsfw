@@ -1,12 +1,4 @@
 const Discord = require("discord.js");
-const client = new discord.Client();
-const prefix = "!"
-client.on('ready', () => {
-  console.log('---------------');
-  console.log(' Bot Is Online')
-  console.log('---------------')
-});
-
 
 module.exports.run = async (bot,message,args) => {
 
@@ -148,5 +140,4 @@ module.exports.help = {
   name: "ass"
 }
 
-
-client.login(process.env.TOKEN);
+client.login(process.env.TOKEN);// لا تغير فيها شيء
